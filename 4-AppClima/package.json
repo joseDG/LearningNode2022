@@ -1,0 +1,19 @@
+{
+  "name": "4-appclima",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "color": "^4.2.3",
+    "dotenv": "^16.0.0",
+    "fetch": "^1.1.0",
+    "inquirer": "^8.2.2"
+  }
+}

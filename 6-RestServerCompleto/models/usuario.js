@@ -21,6 +21,7 @@ const UsuarioSchema = Schema({
     rol: {
         type: String,
         required: true,
+        default: 'USER_ROLE',
         emun: ['ADMIN_ROLE', 'USER_ROLE']
     },
     estado: {
@@ -34,10 +35,9 @@ const UsuarioSchema = Schema({
 });
 
 
-//Crear metodos personalizados - Quita el password
+
 UsuarioSchema.methods.toJSON = function() {
     const { __v, password, _id, ...usuario  } = this.toObject();
-    //remeplaza el valor de uid por el _id en mongo
     usuario.uid = _id;
     return usuario;
 }

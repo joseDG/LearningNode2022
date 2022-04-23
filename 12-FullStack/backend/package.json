@@ -1,0 +1,19 @@
+{
+  "name": "apv",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Aprendiendo Js FullStack",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Jose Diaz",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.3.0"
+  }
+}
